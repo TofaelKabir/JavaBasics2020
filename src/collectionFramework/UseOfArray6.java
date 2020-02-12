@@ -3,19 +3,22 @@ package collectionFramework;
 import java.util.Scanner;
 
 public class UseOfArray6 {
-
+	/*
+	 * Author: Tofael
+	 */
 	public static void main(String[] args) {
-    //don't understand it, need discussion
-        int [] list = new int[5];
+    
+        int [] a = new int[5];
 
         Scanner sc = new Scanner(System.in);
         System.out.println("Please enter some integer value: ");
 
-        for(int j=0; j<list.length;j++) {
-            list[j] = sc.nextInt();
+        for(int j=0; j<a.length;j++) {
+            a[j] = sc.nextInt();
+           // System.out.println(a[j]);
         }
-        for(int i=0; i<list.length;i++){
-            System.out.println(list[i]);
+        for(int i=0; i<a.length;i++){
+            System.out.println(a[i]);
         }
         sc.close();
     }

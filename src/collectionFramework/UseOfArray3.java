@@ -3,6 +3,9 @@ package collectionFramework;
 import java.util.Arrays;
 
 public class UseOfArray3 {
+	/*
+	 * Author: Shohag, Organised by: Tofael
+	 */
 
 	public static void main(String[] args) {
 		// Lets start from array
@@ -11,7 +14,9 @@ public class UseOfArray3 {
 		a[1] = 15;
 		a[2] = 50;
 
+		
 		a[5] = 56;
+		
 		// print single index value:
 
 		System.out.println("^^^^^^^^^^^^^ Printing single index value ^^^^^^^^^^^^^^^^ ");
@@ -20,6 +25,7 @@ public class UseOfArray3 {
 		System.out.println("Single index value: " + a[5]);// output: 56
 
 		System.out.println("\nThe length of the array is: " + a.length);
+		
 
 		// print all index value:
 
@@ -27,8 +33,9 @@ public class UseOfArray3 {
 		for (int i = 0; i < a.length; i++) {
 			System.out.println(a[i]);
 		}
+		
 
-		// we can also update value
+		// we can also update value in array, how?
 		
 		a[0] = 55;
 		System.out.println("\nAfter update, the value of a[0] is: " + a[0]+"\n");// output:?
@@ -38,14 +45,15 @@ public class UseOfArray3 {
 		int [] b = Arrays.copyOf(a, 10); // second argument: declaring size of new array along with old one
 		
 		
-		
+		//b[2]=27;
 		
 		
 		b[6] = 60;
 		b[7] = 65;
 		b[8] = 68;
+		
 		System.out.println("Single index value for new Array: " + b[0]);// why output is: 55?
-		System.out.println("Single index value for new Array: " + b[3]);// output: ?
+		System.out.println("Single index value for new Array: " + b[2]);// output: ?
 		System.out.println("Single index value for new Array: " + b[5]);// output: 56
 		System.out.println("Single index value for new Array: " + b[7]);// output: 65
 		System.out.println("Single index value for new Array: " + b[9]);// output: ?

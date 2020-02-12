@@ -6,7 +6,7 @@ import java.util.Iterator;
 
 public class UseOfArrayList4 {
 	/*
-	 * Author: Shohag
+	 * Author: Shohag, Organised by: Tofael
 	 */
 	public static void main(String[] args) {
 		// getting new ArrayList -by default constructor-->initial capacity (ic) 10
@@ -48,7 +48,7 @@ public class UseOfArrayList4 {
 		}
 
 		// generic comes in java 1.5 -> by defining the type
-		ArrayList<String> ar1 = new ArrayList();
+		ArrayList<String> ar1 = new ArrayList<String>();
 		ar1.add("Mohammad");
 		ar1.add("Tofael");
 		ar1.add("Kabir");
@@ -62,20 +62,30 @@ public class UseOfArrayList4 {
 			System.out.println(ar1.get(i));
 		}
 
-//				//Shohag
-//		        ArrayList<Character> ar2= new ArrayList();
-//		        ar1.add('a');
-//		        ar1.add(43);
-//		        ar1.add("Kabir");
-//		        ar1.add("Sharkar");
-//		        
-//		        System.out.println("\n^^^^^^^^^^^^^ Printing all the value of String type ArrayList ^^^^^^^^^^^^^^^^ ");
-//				
-//						for (int i = 0; i < ar1.size(); i++) {
-//							System.out.println(ar1.get(i));
-//						}
-//     
-//        
+		// Using char type
+		ArrayList<Character> ar2 = new ArrayList<Character>();
+		ar2.add('A');
+		ar2.add('B');
+		ar2.add('C');
+		// ar2.add(''); //Why it will not work
+
+		System.out.println("\n^^^^^^^^^^^^^ Printing all the value of Charcter type ArrayList ^^^^^^^^^^^^^^^^ ");
+
+		for (int i = 0; i < ar2.size(); i++) {
+			System.out.println(ar2.get(i));
+		}
+		// Using Integer type
+		ArrayList<Integer> ar31 = new ArrayList<Integer>();
+		ar31.add(483);
+		ar31.add(484);
+		ar31.add(485);
+		// ar31.add(); //Why it will not work
+
+		System.out.println("\n^^^^^^^^^^^^^ Printing all the value of Integer type ArrayList ^^^^^^^^^^^^^^^^ ");
+
+		for (int i = 0; i < ar31.size(); i++) {
+			System.out.println(ar31.get(i));
+		}
 		// user-defined class obj--see the StudyGroup Class
 		// Creating obj of the StudyGroup Class by parameterized constructor and passing
 		// value:

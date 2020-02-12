@@ -1,6 +1,9 @@
 package collectionFramework;
 
 public class UseOfArray2 {
+	/*
+	 * Author: Shohag, Organised by: Tofael
+	 */
 
 	public static void main(String[] args) {
 		int [] a = new int[6]; // declaring size of the array
@@ -10,14 +13,14 @@ public class UseOfArray2 {
 
 		a[5] = 56;
 		//adding value in index [6]
-		// a[6]=9; //what will happen if we don't comment it out? //Array is fixed in size
+		a[6]=9; //what will happen if we don't comment it out? //Ans: Array is fixed in size, here 6
 
 		// print single index value:
 		System.out.println("^^^^^^^^^^^^^ Printing single index value ^^^^^^^^^^^^^^^^ ");
 		System.out.println("Single index value: " + a[0]);// output: 5
-		System.out.println("Single index value: " + a[3]);// output: ?
+		System.out.println("Single index value: " + a[3]);// output: 0
 		System.out.println("Single index value: " + a[5]);// output: 56
-		// System.out.println("Single index value: "+a[6]);//output: ?
+		System.out.println("Single index value: "+a[6]);//output: ?
 
 	}
 }

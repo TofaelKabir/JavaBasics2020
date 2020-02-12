@@ -6,7 +6,7 @@ import java.util.Iterator;
 
 public class UseOfArrayList2 {
 	/*
-	 * Author: Shohag
+	 * Author: Shohag, Organised by: Tofael
 	 */
 	public static void main(String[] args) {
 		// getting new ArrayList -by default constructor-->initial capacity (ic) 10
@@ -22,7 +22,8 @@ public class UseOfArrayList2 {
 		ar.add(5.5); // ? type
 		ar.add('M'); // different data type is allowed, here char is used
 		ar.add(5, "Nafasat"); // replacing value: adding in index [5]
-		ar.add("Mohammad");// ic is [10]-- then capacity will be increased to [ic*(3/2)+1]=16 [always same formula]
+		ar.add("Mohammad");// ic is [10]-- then capacity will be increased to [ic*(3/2)+1]=16 [always same
+							// formula]
 
 		ar.remove(2);
 
@@ -35,7 +36,6 @@ public class UseOfArrayList2 {
 		System.out.println("Single index value: " + ar.get(5)); // output:
 		System.out.println("Single index value: " + ar.get(9)); // output:
 		System.out.println("Single index value: " + ar.get(10)); // output: //what will happen if you wanna put 11 after
-																	
 
 		System.out.println("Single index value: " + ar.get(ar.size() - 2)); // output:
 
