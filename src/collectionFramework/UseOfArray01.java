@@ -1,7 +1,7 @@
 package collectionFramework;
 
 
-public class UseOfArray1 {
+public class UseOfArray01 {
 	/*
 	 * Author: Shohag, Organised by: Tofael
 	 */

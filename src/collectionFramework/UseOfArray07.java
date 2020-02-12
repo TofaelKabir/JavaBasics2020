@@ -2,7 +2,7 @@ package collectionFramework;
 
 import java.util.Scanner;
 
-public class UseOfArray5 {
+public class UseOfArray07 {
 	/*
 	 * Author: Tofael
 	 */

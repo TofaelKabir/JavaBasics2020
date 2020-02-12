@@ -2,7 +2,7 @@ package collectionFramework;
 
 import java.util.Arrays;
 
-public class UseOfArray3 {
+public class UseOfArray03 {
 	/*
 	 * Author: Shohag, Organised by: Tofael
 	 */

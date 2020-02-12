@@ -1,23 +1,24 @@
 package collectionFramework;
 
-public class UseOfArray4a {
+public class UseOfArray05 {
 	/*
 	 * Author: Shohag, Organised by: Tofael
 	 */
 
 	public static void main(String[] args) {
-		String [] a = new String[6]; // Different data type (String and int) can't be mix in an Array
-		a[0] = "Tofael";
-		a[1] = "A";
-		a[2] = "Sharkar";
-		a[3] = "9";
+		char [] a = new char[6]; // Different data type (String and int) can't be mix in an Array
+		a[0] = 'A';
+		a[1] = 9; //Nasir
+		a[2] = 'c';
+	
 		
-		a[5] = "Mohammad";
+		a[5] = '8';
 		// print single index value:
 		System.out.println("^^^^^^^^^^^^^ Printing single index value ^^^^^^^^^^^^^^^^ ");
 		System.out.println("Single index value: " + a[0]);// output: Tofael
-		System.out.println("Single index value: " + a[3]);// output: ?
-		System.out.println("Single index value: " + a[4]);// output: ?
+		System.out.println("Single index value: " + a[1]);// output: ?
+		System.out.println("Single index value: " + a[2]);// output: ?
+		System.out.println("Single index value: " + a[3]);// output: ? //important, see 3 type of output?
 		System.out.println("Single index value: " + a[5]);// output: Mohammad
 
 		System.out.println("\nThe length of the array is: " + a.length);

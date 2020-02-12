@@ -3,7 +3,7 @@ package collectionFramework;
 import java.util.Random;
 import java.util.Scanner;
 
-public class UseOfArray7b {
+public class UseOfArray10 {
 	/*
 	 * Author: Tofael
 	 */
