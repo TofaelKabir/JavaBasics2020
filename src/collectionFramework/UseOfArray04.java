@@ -6,18 +6,18 @@ public class UseOfArray04 {
 	 */
 
 	public static void main(String[] args) {
-		String [] a = new String[6]; // Different data type (String and int) can't be mix in an Array
+		String [] a = new String[6]; // Different data type (String, char, int etc) can't be mix in an Array
 		a[0] = "Tofael";
 		a[1] = "A";
-		a[2] = "Sharkar";
+		a[2] = " ";
 		a[3] = "9";
 		
 		a[5] = "Mohammad";
 		// print single index value:
 		System.out.println("^^^^^^^^^^^^^ Printing single index value ^^^^^^^^^^^^^^^^ ");
 		System.out.println("Single index value: " + a[0]);// output: Tofael
-		System.out.println("Single index value: " + a[3]);// output: ?
-		System.out.println("Single index value: " + a[4]);// output: ?
+		System.out.println("Single index value: " + a[2]);// output: why empty?
+		System.out.println("Single index value: " + a[4]);// output: why null?
 		System.out.println("Single index value: " + a[5]);// output: Mohammad
 
 		System.out.println("\nThe length of the array is: " + a.length);

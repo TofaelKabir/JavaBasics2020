@@ -13,7 +13,9 @@ public class UseOfArray09 {
 
         Random random = new Random();
 
-        int a = random.nextInt(); //with or without limit
+        int a = random.nextInt(); //without limit(show negative number too)
+        //int a = random.nextInt(100); //with limit
         System.out.println("Randomly chosen number: " + a);
+       
     }
 }

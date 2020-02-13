@@ -7,11 +7,14 @@ public class UseOfArray01 {
 	 */
 
 	public static void main(String[] args) {
-		int [] a = new int[6]; // declaring size of the array // a is the array name // [] called container
+		
+		int [] a = new int[6]; // declaring size of the array, Array is fixed size // a is the array name 
+		                       // [] called container
 		a[0] = 5;
 		a[1] = 15;
 		a[2] = 50;
-		//a[3] = 'j';  //Nasir
+		a[3] = 'j';  // see below
+		
 		
 		a[5] = 56;
 		// print single index value:
@@ -23,3 +26,10 @@ public class UseOfArray01 {
 		System.out.println("\nPrinting single index value: " + a[a.length-1]); //find the value for (length-1) no.
 	}
 }
+/*
+Note: As we know that array does not accept mixed data type but if we try to put char in int[] array it will accept and when we print that index value it will show a strange numerical value. Though it looks like a int value but it is actually an ASCII value. At runtime char is converted to ASCII value. That means every char has a specific ASCII value. There is even a specific calculation in the ASCII table. Have a look at the table above. 
+
+
+
+
+*/

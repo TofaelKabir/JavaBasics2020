@@ -13,7 +13,7 @@ public class UseOfArray02 {
 
 		a[5] = 56;
 		//adding value in index [6]
-		a[6]=9; //what will happen if we don't comment it out? //Ans: Array is fixed in size, here 6
+		a[6]=9; //what will happen if we don't comment it out? //Ans: Array length is fixed in size, here 6
 
 		// print single index value:
 		System.out.println("^^^^^^^^^^^^^ Printing single index value ^^^^^^^^^^^^^^^^ ");

@@ -8,7 +8,6 @@ public class UseOfArray03 {
 	 */
 
 	public static void main(String[] args) {
-		// Lets start from array
 		int [] a = new int[6]; // declaring size of the array
 		a[0] = 5;
 		a[1] = 15;
@@ -42,10 +41,11 @@ public class UseOfArray03 {
 		
 		
 		// copying of another array:
+			
 		int [] b = Arrays.copyOf(a, 10); // second argument: declaring size of new array along with old one
 		
 		
-		//b[2]=27;
+		b[2]=27;
 		
 		
 		b[6] = 60;
@@ -53,7 +53,7 @@ public class UseOfArray03 {
 		b[8] = 68;
 		
 		System.out.println("Single index value for new Array: " + b[0]);// why output is: 55?
-		System.out.println("Single index value for new Array: " + b[2]);// output: ?
+		System.out.println("Single index value for new Array: " + b[2]);// output: how it happen?
 		System.out.println("Single index value for new Array: " + b[5]);// output: 56
 		System.out.println("Single index value for new Array: " + b[7]);// output: 65
 		System.out.println("Single index value for new Array: " + b[9]);// output: ?
@@ -65,8 +65,10 @@ public class UseOfArray03 {
 		for (int i = 0; i < b.length; i++) {
 			System.out.println(b[i]);
 		}
+		//copying can be done several times
 		
 		int [] c = Arrays.copyOf(b, 12);
+		
 		System.out.println("Single index value for new Array: " + c[0]);// why output is: 55?
 		System.out.println("Single index value for new Array: " + c[11]);// output: ?
 		

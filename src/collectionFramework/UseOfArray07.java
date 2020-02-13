@@ -18,6 +18,7 @@ public class UseOfArray07 {
              a[i] = sc.nextInt();
            System.out.println(a[i]); //what will happen if you comment out it
         }
+        //what will happen if you print string instead of int
         System.out.println("\nThe value in index 3 is: "+a[3]);
         System.out.println("\nThe value in index 4 is: "+a[4]);
         System.out.println("\nThe value in index 2 is: "+a[2]);
