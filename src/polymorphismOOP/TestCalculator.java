@@ -1,4 +1,4 @@
-package polymorphism;
+package polymorphismOOP;
 
 public class TestCalculator {
 

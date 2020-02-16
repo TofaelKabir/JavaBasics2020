@@ -1,4 +1,4 @@
-package polymorphism;
+package polymorphismOOP;
 
 public class LandCalculator { //Method overloading
 	   //String landName, no need to declare or initialize

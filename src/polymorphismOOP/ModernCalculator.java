@@ -1,4 +1,4 @@
-package polymorphism;
+package polymorphismOOP;
 
 public class ModernCalculator extends LandCalculator{
 	@Override  //method 3

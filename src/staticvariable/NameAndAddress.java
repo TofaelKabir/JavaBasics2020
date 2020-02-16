@@ -1,7 +1,7 @@
 package staticvariable;
 
 public class NameAndAddress {
-
+	//non-static variable
 	String fullName = "Mohammad Tofael Kabir Sharkar";
 	int houseNumber = 625;
 	char direction = 'W';
@@ -9,13 +9,14 @@ public class NameAndAddress {
 	int stNumber = 57;
 	String state = "NY";
 	int zipCode = 10019;
-	
-public void nameAndAddress() {
-	System.out.println(fullName+houseNumber+direction+ " "+stNumber+"st, Apt "+aptNumber+", "+state+ " "+zipCode);
-    }
 
-public static void main(String[] args) {
-    NameAndAddress nd = new NameAndAddress();
-	nd.nameAndAddress();
-    }
+	public void nameAndAddress() {
+		System.out.println(fullName + "\n" + houseNumber + direction + " " + stNumber + "st, Apt " + aptNumber + ", "
+				+ state + " " + zipCode);
+	}
+
+	public static void main(String[] args) {
+		NameAndAddress nd = new NameAndAddress();
+		nd.nameAndAddress();
+	}
 }

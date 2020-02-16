@@ -32,8 +32,8 @@ public class StringManipulation02 {
 		System.out.println("\nAfter trimming: " + s5.trim());
 
 		// To replace
-		System.out.println("After replacing: " + s5.replace('H', 'h'));
-		System.out.println("After replacing: " + s5.trim().replace('!', ','));
+		System.out.println("After replacing but no trim: " + s5.replace('H', 'h'));
+		System.out.println("After replacing and trim: " + s5.trim().replace('!', ','));
 
 		String date = "02/14/2020";
 		System.out.println("After replacing the date: " + date.replace('/', '-'));
