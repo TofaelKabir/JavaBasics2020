@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Iterator;
 
-public class UseOfArrayList4 {
+public class UseOfArrayList05 {
 	/*
 	 * Author: Shohag, Organised by: Tofael
 	 */
@@ -48,7 +48,7 @@ public class UseOfArrayList4 {
 		}
 
 		// generic comes in java 1.5 -> by defining the type
-		ArrayList<String> ar1 = new ArrayList<String>();
+		ArrayList<String> ar1 = new ArrayList();
 		ar1.add("Mohammad");
 		ar1.add("Tofael");
 		ar1.add("Kabir");
@@ -105,6 +105,22 @@ public class UseOfArrayList4 {
 				"\n^^^^^^^^^^^^^ Printing all the value of user defined class obj ArrayList ^^^^^^^^^^^^^^^^ ");
 		for (StudyGroup s : ar3) {
 			System.out.println(s.fname + " " + s.lname + " " + s.age);
+		}
+
+		// use of addAll() method
+		ArrayList ar5 = new ArrayList(); // creaing new ArrayList
+		ar5.add("A");
+		ar5.add("B");
+		ar5.add("C");
+
+		// applied addAll() in ar[]-->now in ar[] we have also ar5[] value too
+		ar.addAll(ar5);
+		System.out.println("After using addAll method the new Array List: " + ar);
+		// before loop, legacy type
+		System.out.println("\n^^^^^^^^^^^^^ After using Iterator the new Array List ^^^^^^^^^^^^^^^^ ");
+		Iterator ar7 = ar.iterator();
+		while (ar7.hasNext()) {
+			System.out.println(ar7.next());
 		}
 	}
 }
