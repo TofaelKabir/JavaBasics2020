@@ -26,7 +26,7 @@ public class UseOfPriorityQueue {
 			System.out.println(it1.next());
 		}
 
-		queue.poll();
+		System.out.println("\n"+queue.poll());
 		System.out.println("after removing two elements:");
 		Iterator<String> it2 = queue.iterator();
 		while (it2.hasNext()) {
@@ -36,3 +36,4 @@ public class UseOfPriorityQueue {
 	}
 
 }
+//follow ASCII VALUE FOR PRIORITY
