@@ -22,6 +22,7 @@ public class UseOfArray01 {
 		System.out.println("Printing single index value: " + a[3]);// output: 0
 		System.out.println("Printing single index value: " + a[5]);// output: 5
 		System.out.println("\nThe length of the array is: " + a.length);
+		//System.out.println("Printing single index value: " + a);// output: 5 //figure out
 		System.out.println("\nThe length of the array is: " + (a.length-1)); //for understanding the next line
 		System.out.println("\nPrinting single index value: " + a[a.length-1]); //find the value for (length-1) no.
 	}

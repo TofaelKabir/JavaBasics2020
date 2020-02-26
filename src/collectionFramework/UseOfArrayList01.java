@@ -10,12 +10,12 @@ public class UseOfArrayList01 {
 	 */
 	public static void main(String[] args) {
 
-		// getting new ArrayList -by default contractor-->initial capacity (ic) 10
+		// getting new ArrayList -by default constructor-->initial capacity (ic) 10
 		ArrayList ar = new ArrayList();
 		ar.add("Shohag"); // index [0]
 		ar.add("Tofael");
 		ar.add(5); // different data type is allowed, here int is used
-		ar.add(""); // null is allowed for String Type
+		ar.add(""); // empty is allowed for String Type
 		ar.add("Manir");
 		ar.add("Orfat");
 		ar.add("Tofael");// duplicate value is allowed

@@ -46,9 +46,9 @@ public class UseOfArrayList03 {
 		for (int i = 0; i < ar.size(); i++) {
 			System.out.println(ar.get(i));
 		}
-
+		//NEW
 		// generic comes in java 1.5 -> by defining the type
-		ArrayList<String> ar1 = new ArrayList();
+		ArrayList<String> ar1 = new ArrayList<String>();
 		ar1.add("Mohammad");
 		ar1.add("Tofael");
 		ar1.add("Kabir");
@@ -67,7 +67,7 @@ public class UseOfArrayList03 {
 		ar2.add('A');
 		ar2.add('B');
 		ar2.add('C');
-		// ar2.add(''); //Why it will not work
+		//ar2.add(''); //Why it will not work
 
 		System.out.println("\n^^^^^^^^^^^^^ Printing all the value of Charcter type ArrayList ^^^^^^^^^^^^^^^^ ");
 
@@ -79,7 +79,7 @@ public class UseOfArrayList03 {
 		ar31.add(483);
 		ar31.add(484);
 		ar31.add(485);
-		// ar31.add(); //Why it will not work
+		//ar31.add(); //Why it will not work
 
 		System.out.println("\n^^^^^^^^^^^^^ Printing all the value of Integer type ArrayList ^^^^^^^^^^^^^^^^ ");
 

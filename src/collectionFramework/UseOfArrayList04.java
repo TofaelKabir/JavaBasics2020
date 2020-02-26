@@ -86,6 +86,7 @@ public class UseOfArrayList04 {
 		for (int i = 0; i < ar31.size(); i++) {
 			System.out.println(ar31.get(i));
 		}
+		//NEW
 		// user-defined class obj--see the StudyGroup Class
 		// Creating obj of the StudyGroup Class by parameterized constructor and passing
 		// value:
@@ -99,12 +100,13 @@ public class UseOfArrayList04 {
 		ar3.add(s1);
 		ar3.add(s2);
 		ar3.add(s3);
+		//ar3.add(s4);
 
 		// print by using for each loop/enhanced for loop/advanced for loop
 		System.out.println(
 				"\n^^^^^^^^^^^^^ Printing all the value of user defined class obj ArrayList ^^^^^^^^^^^^^^^^ ");
-		for (StudyGroup s : ar3) {
-			System.out.println(s.fname + " " + s.lname + " " + s.age);
+		for (StudyGroup sg : ar3) {
+			System.out.println(sg.fname + " " + sg.lname + " " + sg.age);
 		}
 	}
 }

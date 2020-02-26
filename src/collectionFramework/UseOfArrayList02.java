@@ -14,18 +14,19 @@ public class UseOfArrayList02 {
 		ar.add("Shohag"); // index [0]
 		ar.add("Tofael");
 		ar.add(5); // different data type is allowed, here int is used
-		ar.add(""); // null is allowed for String Type
+		ar.add(""); 
 		ar.add("Manir");
+		//NAFASAT WILL COME HERE
 		ar.add("Orfat");
 		ar.add("Tofael");// duplicate value is allowed
 		ar.add("Imran");
-		ar.add(5.5); // ? type
+		ar.add(5.5); 
 		ar.add('M'); // different data type is allowed, here char is used
-		ar.add(5, "Nafasat"); // replacing value: adding in index [5]
+		ar.add(5, "Nafasat"); // replacing value: adding in index [5] //NEW
 		ar.add("Mohammad");// ic is [10]-- then capacity will be increased to [ic*(3/2)+1]=16 [always same
 							// formula]
 
-		ar.remove(2);
+		ar.remove(2); //NEW
 
 		System.out.println("The size of the ArrayList is: " + ar.size() + "\n"); // in Array this is length
 

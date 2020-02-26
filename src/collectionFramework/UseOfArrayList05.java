@@ -106,7 +106,7 @@ public class UseOfArrayList05 {
 		for (StudyGroup s : ar3) {
 			System.out.println(s.fname + " " + s.lname + " " + s.age);
 		}
-
+		//New
 		// use of addAll() method
 		ArrayList ar5 = new ArrayList(); // creaing new ArrayList
 		ar5.add("A");
@@ -115,12 +115,12 @@ public class UseOfArrayList05 {
 
 		// applied addAll() in ar[]-->now in ar[] we have also ar5[] value too
 		ar.addAll(ar5);
-		System.out.println("After using addAll method the new Array List: " + ar);
-		// before loop, legacy type
+		System.out.println("\nAfter using addAll method the new Array List: " + ar);
+		// before loop, Iterator legacy type
 		System.out.println("\n^^^^^^^^^^^^^ After using Iterator the new Array List ^^^^^^^^^^^^^^^^ ");
-		Iterator ar7 = ar.iterator();
-		while (ar7.hasNext()) {
-			System.out.println(ar7.next());
+		Iterator ar6 = ar.iterator(); //interface
+		while (ar6.hasNext()) {
+			System.out.println(ar6.next());
 		}
 	}
 }
