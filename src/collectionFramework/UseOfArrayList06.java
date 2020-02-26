@@ -48,7 +48,7 @@ public class UseOfArrayList06 {
 		}
 
 		// generic comes in java 1.5 -> by defining the type
-		ArrayList<String> ar1 = new ArrayList();
+		ArrayList<String> ar1 = new ArrayList<String>();
 		ar1.add("Mohammad");
 		ar1.add("Tofael");
 		ar1.add("Kabir");
@@ -86,6 +86,7 @@ public class UseOfArrayList06 {
 		for (int i = 0; i < ar31.size(); i++) {
 			System.out.println(ar31.get(i));
 		}
+		//NEW
 		// user-defined class obj--see the StudyGroup Class
 		// Creating obj of the StudyGroup Class by parameterized constructor and passing
 		// value:
@@ -99,51 +100,13 @@ public class UseOfArrayList06 {
 		ar3.add(s1);
 		ar3.add(s2);
 		ar3.add(s3);
+		//ar3.add(s4);
 
 		// print by using for each loop/enhanced for loop/advanced for loop
 		System.out.println(
 				"\n^^^^^^^^^^^^^ Printing all the value of user defined class obj ArrayList ^^^^^^^^^^^^^^^^ ");
-		for (StudyGroup s : ar3) {
-			System.out.println(s.fname + " " + s.lname + " " + s.age);
-		}
-
-		// use of addAll() method
-		ArrayList ar5 = new ArrayList(); // creaing new ArrayList
-		ar5.add("A");
-		ar5.add("B");
-		ar5.add("C");
-
-		// applied addAll() in ar[]-->now in ar[] we have also ar5[] value too
-		ar.addAll(ar5);
-		System.out.println("After using addAll method the new Array List: " + ar);
-		// before loop, legacy type
-		System.out.println("\n^^^^^^^^^^^^^ After using Iterator the new Array List ^^^^^^^^^^^^^^^^ ");
-		Iterator ar7 = ar.iterator();
-		while (ar7.hasNext()) {
-			System.out.println(ar7.next());
-		}
-		//NEW
-		// use of removeAll() method
-		ar.removeAll(ar5);
-		System.out.println("\n^^^^^^^^^^^^^ After using removeAll()+Iterator the new Array List ^^^^^^^^^^^^^^^^ ");
-		Iterator ar8 = ar.iterator();
-		while (ar8.hasNext()) {
-			System.out.println(ar8.next());
-		}
-
-		// use of retainAll()--only keeps common value between two ArrayList obj
-
-		ArrayList<String> ar9 = new ArrayList(); // creating new ArrayList
-		ar9.add("Shohag"); // -------this is common
-		ar9.add("Rahman");
-		ar9.add("salma");
-		ar9.add("Tofael");
-		// applying retainAll() below, which will keep the common from the list
-		ar.retainAll(ar9);
-		//ar9.retainAll(ar); //what will happen when we do this? question: need to solve
-		System.out.println("\n^^^^^^^^^^^^^ After using retainAll the new Array List ^^^^^^^^^^^^^^^^ ");
-		for (int i = 0; i < ar.size(); i++) {
-			System.out.println(ar.get(i));
+		for (StudyGroup sg : ar3) {
+			System.out.println(sg.fname + " " + sg.lname + " " + sg.age);
 		}
 	}
 }

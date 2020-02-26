@@ -9,43 +9,26 @@ public class UseOfArrayList02 {
 	 * Author: Shohag, Organised by: Tofael
 	 */
 	public static void main(String[] args) {
+
 		// getting new ArrayList -by default constructor-->initial capacity (ic) 10
 		ArrayList ar = new ArrayList();
 		ar.add("Shohag"); // index [0]
 		ar.add("Tofael");
 		ar.add(5); // different data type is allowed, here int is used
-		ar.add(""); 
+		ar.add(""); // empty is allowed for String Type
 		ar.add("Manir");
-		//NAFASAT WILL COME HERE
 		ar.add("Orfat");
 		ar.add("Tofael");// duplicate value is allowed
 		ar.add("Imran");
-		ar.add(5.5); 
+		ar.add(5.5); // ? type
 		ar.add('M'); // different data type is allowed, here char is used
-		ar.add(5, "Nafasat"); // replacing value: adding in index [5] //NEW
-		ar.add("Mohammad");// ic is [10]-- then capacity will be increased to [ic*(3/2)+1]=16 [always same
-							// formula]
+		ar.add("Nafasat");
+		ar.add("Mohammad");// ic is [10]-- then capacity will be increased to [ic*(3/2)+1]=16
 
-		ar.remove(2); //NEW
-
-		System.out.println("The size of the ArrayList is: " + ar.size() + "\n"); // in Array this is length
-
-		System.out.println("^^^^^^^^^^^^^ Printing single index value ^^^^^^^^^^^^^^^^ ");
-		System.out.println("Single index value: " + ar.get(0)); // output:
-		System.out.println("Single index value: " + ar.get(1)); // output:
-		System.out.println("Single index value: " + ar.get(2)); // output:
-		System.out.println("Single index value: " + ar.get(5)); // output:
-		System.out.println("Single index value: " + ar.get(9)); // output:
-		System.out.println("Single index value: " + ar.get(10)); // output: //what will happen if you wanna put 11 after
-
-		System.out.println("Single index value: " + ar.get(ar.size() - 2)); // output:
-
-		System.out.println("\nThe new Array List: " + ar);
-
-		System.out.println("\n^^^^^^^^^^^^^ Printing all the value of ArrayList ^^^^^^^^^^^^^^^^ ");
-		// to print all elements (for loop, for each loop, iterator()
-		for (int i = 0; i < ar.size(); i++) {
-			System.out.println(ar.get(i));
+		System.out.println("\n^^^^^^^^^^^^^ After using Iterator the new Array List ^^^^^^^^^^^^^^^^ ");
+		Iterator iterator = ar.iterator();
+		while (iterator.hasNext()) {
+			System.out.println(iterator.next());
 		}
 
 	}

@@ -46,9 +46,9 @@ public class UseOfArrayList05 {
 		for (int i = 0; i < ar.size(); i++) {
 			System.out.println(ar.get(i));
 		}
-
+		//NEW
 		// generic comes in java 1.5 -> by defining the type
-		ArrayList<String> ar1 = new ArrayList();
+		ArrayList<String> ar1 = new ArrayList<String>();
 		ar1.add("Mohammad");
 		ar1.add("Tofael");
 		ar1.add("Kabir");
@@ -67,7 +67,7 @@ public class UseOfArrayList05 {
 		ar2.add('A');
 		ar2.add('B');
 		ar2.add('C');
-		// ar2.add(''); //Why it will not work
+		//ar2.add(''); //Why it will not work
 
 		System.out.println("\n^^^^^^^^^^^^^ Printing all the value of Charcter type ArrayList ^^^^^^^^^^^^^^^^ ");
 
@@ -79,48 +79,12 @@ public class UseOfArrayList05 {
 		ar31.add(483);
 		ar31.add(484);
 		ar31.add(485);
-		// ar31.add(); //Why it will not work
+		//ar31.add(); //Why it will not work
 
 		System.out.println("\n^^^^^^^^^^^^^ Printing all the value of Integer type ArrayList ^^^^^^^^^^^^^^^^ ");
 
 		for (int i = 0; i < ar31.size(); i++) {
 			System.out.println(ar31.get(i));
-		}
-		// user-defined class obj--see the StudyGroup Class
-		// Creating obj of the StudyGroup Class by parameterized constructor and passing
-		// value:
-		StudyGroup s1 = new StudyGroup("Muhammad", 50, "Tofayel");
-		StudyGroup s2 = new StudyGroup("Muhammad", 40, "Sharif");
-		StudyGroup s3 = new StudyGroup("Muhammad", 30, "Sohag");
-		StudyGroup s4 = new StudyGroup("Muhammad", 30, "Sohag"); // why s4 is not printing? get it?
-
-		// now we can put the obj of the StudyGroup type obj (s1,s2,s3,s4))
-		ArrayList<StudyGroup> ar3 = new ArrayList<StudyGroup>();
-		ar3.add(s1);
-		ar3.add(s2);
-		ar3.add(s3);
-
-		// print by using for each loop/enhanced for loop/advanced for loop
-		System.out.println(
-				"\n^^^^^^^^^^^^^ Printing all the value of user defined class obj ArrayList ^^^^^^^^^^^^^^^^ ");
-		for (StudyGroup s : ar3) {
-			System.out.println(s.fname + " " + s.lname + " " + s.age);
-		}
-		//New
-		// use of addAll() method
-		ArrayList ar5 = new ArrayList(); // creaing new ArrayList
-		ar5.add("A");
-		ar5.add("B");
-		ar5.add("C");
-
-		// applied addAll() in ar[]-->now in ar[] we have also ar5[] value too
-		ar.addAll(ar5);
-		System.out.println("\nAfter using addAll method the new Array List: " + ar);
-		// before loop, Iterator legacy type
-		System.out.println("\n^^^^^^^^^^^^^ After using Iterator the new Array List ^^^^^^^^^^^^^^^^ ");
-		Iterator ar6 = ar.iterator(); //interface
-		while (ar6.hasNext()) {
-			System.out.println(ar6.next());
 		}
 	}
 }

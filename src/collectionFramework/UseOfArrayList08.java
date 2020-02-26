@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Iterator;
 
-public class UseOfArrayList07 {
+public class UseOfArrayList08 {
 	/*
 	 * Author: Shohag, Organised by: Tofael
 	 */
@@ -106,7 +106,7 @@ public class UseOfArrayList07 {
 		for (StudyGroup s : ar3) {
 			System.out.println(s.fname + " " + s.lname + " " + s.age);
 		}
-		//New
+
 		// use of addAll() method
 		ArrayList ar5 = new ArrayList(); // creaing new ArrayList
 		ar5.add("A");
@@ -115,12 +115,35 @@ public class UseOfArrayList07 {
 
 		// applied addAll() in ar[]-->now in ar[] we have also ar5[] value too
 		ar.addAll(ar5);
-		System.out.println("\nAfter using addAll method the new Array List: " + ar);
-		// before loop, Iterator legacy type
+		System.out.println("After using addAll method the new Array List: " + ar);
+		// before loop, legacy type
 		System.out.println("\n^^^^^^^^^^^^^ After using Iterator the new Array List ^^^^^^^^^^^^^^^^ ");
-		Iterator ar6 = ar.iterator(); //interface
-		while (ar6.hasNext()) {
-			System.out.println(ar6.next());
+		Iterator ar7 = ar.iterator();
+		while (ar7.hasNext()) {
+			System.out.println(ar7.next());
+		}
+		//NEW
+		// use of removeAll() method
+		ar.removeAll(ar5);
+		System.out.println("\n^^^^^^^^^^^^^ After using removeAll()+Iterator the new Array List ^^^^^^^^^^^^^^^^ ");
+		Iterator ar8 = ar.iterator();
+		while (ar8.hasNext()) {
+			System.out.println(ar8.next());
+		}
+
+		// use of retainAll()--only keeps common value between two ArrayList obj
+
+		ArrayList<String> ar9 = new ArrayList(); // creating new ArrayList
+		ar9.add("Shohag"); // -------this is common
+		ar9.add("Rahman");
+		ar9.add("salma");
+		ar9.add("Tofael");
+		// applying retainAll() below, which will keep the common from the list
+		ar.retainAll(ar9);
+		//ar9.retainAll(ar); //what will happen when we do this? question: need to solve
+		System.out.println("\n^^^^^^^^^^^^^ After using retainAll the new Array List ^^^^^^^^^^^^^^^^ ");
+		for (int i = 0; i < ar.size(); i++) {
+			System.out.println(ar.get(i));
 		}
 	}
 }
