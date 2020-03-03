@@ -118,9 +118,9 @@ public class UseOfArrayList07 {
 		System.out.println("\nAfter using addAll method the new Array List: " + ar);
 		// before loop, Iterator legacy type
 		System.out.println("\n^^^^^^^^^^^^^ After using Iterator the new Array List ^^^^^^^^^^^^^^^^ ");
-		Iterator ar6 = ar.iterator(); //interface
-		while (ar6.hasNext()) {
-			System.out.println(ar6.next());
+		Iterator iterator = ar.iterator(); //interface
+		while (iterator.hasNext()) {
+			System.out.println(iterator.next());
 		}
 	}
 }

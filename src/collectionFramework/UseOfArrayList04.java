@@ -13,7 +13,7 @@ public class UseOfArrayList04 {
 		ArrayList ar = new ArrayList();
 		ar.add("Shohag"); // index [0]
 		ar.add("Tofael");
-		ar.add(5); // different data type is allowed, here int is used
+		ar.add(5); // it will be removed
 		ar.add(""); 
 		ar.add("Manir");
 		//NAFASAT WILL COME HERE
@@ -34,6 +34,7 @@ public class UseOfArrayList04 {
 		System.out.println("Single index value: " + ar.get(0)); // output:
 		System.out.println("Single index value: " + ar.get(1)); // output:
 		System.out.println("Single index value: " + ar.get(2)); // output:
+		System.out.println("Single index value: " + ar.get(4)); // output:
 		System.out.println("Single index value: " + ar.get(5)); // output:
 		System.out.println("Single index value: " + ar.get(9)); // output:
 		System.out.println("Single index value: " + ar.get(10)); // output: //what will happen if you wanna put 11 after
@@ -43,7 +44,7 @@ public class UseOfArrayList04 {
 		System.out.println("\nThe new Array List: " + ar);
 
 		System.out.println("\n^^^^^^^^^^^^^ Printing all the value of ArrayList ^^^^^^^^^^^^^^^^ ");
-		// to print all elements (for loop, for each loop, iterator()
+		// to print all elements (for loop, for each loop, iterator() is used, for loop is better
 		for (int i = 0; i < ar.size(); i++) {
 			System.out.println(ar.get(i));
 		}

@@ -20,7 +20,7 @@ public class UseOfArrayList01 {
 		ar.add("Orfat");
 		ar.add("Tofael");// duplicate value is allowed
 		ar.add("Imran");
-		ar.add(5.5); // ? type
+		ar.add(5.5); // ? double type
 		ar.add('M'); // different data type is allowed, here char is used
 		ar.add("Nafasat");
 		ar.add("Mohammad");// ic is [10]-- then capacity will be increased to [ic*(3/2)+1]=16

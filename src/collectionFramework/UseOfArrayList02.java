@@ -26,7 +26,7 @@ public class UseOfArrayList02 {
 		ar.add("Mohammad");// ic is [10]-- then capacity will be increased to [ic*(3/2)+1]=16
 
 		System.out.println("\n^^^^^^^^^^^^^ After using Iterator the new Array List ^^^^^^^^^^^^^^^^ ");
-		Iterator iterator = ar.iterator();
+		Iterator iterator = ar.iterator(); //legacy type, first loop used in java
 		while (iterator.hasNext()) {
 			System.out.println(iterator.next());
 		}

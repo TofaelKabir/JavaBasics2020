@@ -91,16 +91,16 @@ public class UseOfArrayList06 {
 		// Creating obj of the StudyGroup Class by parameterized constructor and passing
 		// value:
 		StudyGroup s1 = new StudyGroup("Muhammad", 50, "Tofayel");
-		StudyGroup s2 = new StudyGroup("Muhammad", 40, "Sharif");
-		StudyGroup s3 = new StudyGroup("Muhammad", 30, "Sohag");
-		StudyGroup s4 = new StudyGroup("Muhammad", 30, "Sohag"); // why s4 is not printing? get it?
+		StudyGroup s2 = new StudyGroup("Md", 40, "Sharif");
+		StudyGroup s3 = new StudyGroup("Ahmed", 30, "Sohag");
+		StudyGroup s4 = new StudyGroup("Miah", 30, "Sohel"); // why s4 is not printing? get it?
 
 		// now we can put the obj of the StudyGroup type obj (s1,s2,s3,s4))
 		ArrayList<StudyGroup> ar3 = new ArrayList<StudyGroup>();
 		ar3.add(s1);
 		ar3.add(s2);
 		ar3.add(s3);
-		//ar3.add(s4);
+		ar3.add(s4);
 
 		// print by using for each loop/enhanced for loop/advanced for loop
 		System.out.println(
