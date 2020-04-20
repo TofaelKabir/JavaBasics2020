@@ -11,11 +11,12 @@ public class UseOfArray09 {
 	public static void main(String[] args) {
 		//how Random works
 
-        Random random = new Random();
+        Random random = new Random(); //chooosing randomly, not inputting, so no System.in
 
         int a = random.nextInt(); //without limit(show negative number too)
         //int a = random.nextInt(100); //with limit
-        System.out.println("Randomly chosen number: " + a);
+        System.out.println("Randomly chosen number1: " + a);
+        System.out.println("Randomly chosen number2: " + random.nextInt());
        
     }
 }

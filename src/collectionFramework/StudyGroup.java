@@ -7,6 +7,9 @@ public class StudyGroup {
 	public int age;
 	public String lname;
 	
+	public StudyGroup() {
+		System.out.println("defauly constructor");
+	}
 	//creating constructor
 	public StudyGroup(String fname, int age, String lname){
 		this.fname=fname;

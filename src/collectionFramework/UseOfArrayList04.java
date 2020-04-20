@@ -26,7 +26,7 @@ public class UseOfArrayList04 {
 		ar.add("Mohammad");// ic is [10]-- then capacity will be increased to [ic*(3/2)+1]=16 [always same
 							// formula]
 
-		ar.remove(2); //NEW
+		ar.remove(2); //NEW  //INDEX NUMBER
 
 		System.out.println("The size of the ArrayList is: " + ar.size() + "\n"); // in Array this is length
 
@@ -39,7 +39,7 @@ public class UseOfArrayList04 {
 		System.out.println("Single index value: " + ar.get(9)); // output:
 		System.out.println("Single index value: " + ar.get(10)); // output: //what will happen if you wanna put 11 after
 
-		System.out.println("Single index value: " + ar.get(ar.size() - 2)); // output:
+		System.out.println("Single index value: " + ar.get(ar.size() - 1)); // output:
 
 		System.out.println("\nThe new Array List: " + ar);
 

@@ -17,7 +17,7 @@ public class UseOfArray08 {
             a[j] = sc.nextInt();
             System.out.println(a[j]);
         }
-        for(int i=0; i<a.length;i++){
+        for(int i=0; i<a.length;i++){ //for printing all of them
             System.out.println(a[i]);
        }
         sc.close();

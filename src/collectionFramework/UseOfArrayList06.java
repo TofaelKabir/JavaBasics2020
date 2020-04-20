@@ -63,7 +63,7 @@ public class UseOfArrayList06 {
 		}
 
 		// Using char type
-		ArrayList<Character> ar2 = new ArrayList<Character>();
+		ArrayList<Character> ar2 = new ArrayList<Character>(); //Character refer class
 		ar2.add('A');
 		ar2.add('B');
 		ar2.add('C');
@@ -105,7 +105,7 @@ public class UseOfArrayList06 {
 		// print by using for each loop/enhanced for loop/advanced for loop
 		System.out.println(
 				"\n^^^^^^^^^^^^^ Printing all the value of user defined class obj ArrayList ^^^^^^^^^^^^^^^^ ");
-		for (StudyGroup sg : ar3) {
+		for (StudyGroup sg : ar3) { //sg is a container, where to put the value from the below loop
 			System.out.println(sg.fname + " " + sg.lname + " " + sg.age);
 		}
 	}

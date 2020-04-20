@@ -9,7 +9,7 @@ public class UseOfArray04 {
 		String [] a = new String[6]; // Different data type (String, char, int etc) can't be mix in an Array
 		a[0] = "Tofael";
 		a[1] = "A";
-		a[2] = " ";
+		a[2] = " "; //white space //empty string when "", no space inside
 		a[3] = "9";
 		
 		a[5] = "Mohammad";
