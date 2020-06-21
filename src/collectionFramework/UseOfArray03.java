@@ -19,31 +19,30 @@ public class UseOfArray03 {
 		// print single index value:
 
 		System.out.println("^^^^^^^^^^^^^ Printing single index value ^^^^^^^^^^^^^^^^ ");
-		System.out.println("Single index value: " + a[0]);// output: 5
+		System.out.println("Single index value: " + a[0]);// output: ?
 		System.out.println("Single index value: " + a[3]);// output: ?
-		System.out.println("Single index value: " + a[5]);// output: 56
+		System.out.println("Single index value: " + a[5]);// output: ?
 
 		System.out.println("\nThe length of the array is: " + a.length);
 		
-
-		// print all index value:
-
+		// NEW FROM HERE
+		// Printing all index value
 		System.out.println("\n^^^^^^^^^^^^^ Printing all index value of Array a [] ^^^^^^^^^^^^^^^^ ");
 		for (int i = 0; i < a.length; i++) {
 			System.out.println(a[i]);
 		}
 		
 
-		// we can also update value in array, how?
+		// We can also update value in array, how?
 		
 		a[0] = 55;
 		System.out.println("\nAfter update, the value of a[0] is: " + a[0]+"\n");// output:?
 		
-		
-		// copying of another array:
+		System.out.println("\n----- Copying of another array -----");
 		//this is how we can increase the length of an Array (see below)
 			
-		int [] b = Arrays.copyOf(a, 10); // second argument: declaring size of new array along with old one
+		int [] b = Arrays.copyOf(a, 10); 
+		// second argument: declaring size of new array along with old one and now the length is 10
 		
 		
 		b[2]=27;
@@ -66,6 +65,7 @@ public class UseOfArray03 {
 		for (int i = 0; i < b.length; i++) {
 			System.out.println(b[i]);
 		}
+		
 		//copying can be done several times
 		
 		int [] c = Arrays.copyOf(b, 12); //Array vS Arrays, Arrays is a class is used to manipulate the Array
@@ -74,7 +74,8 @@ public class UseOfArray03 {
 		System.out.println("Single index value for new Array: " + c[11]);// output: ?
 		System.out.println("Single index value for new Array: " + Arrays.toString(c)); //opition+command+down arrow -see the magic //ctl+alt+downarror
 		Arrays.sort(c); //sorting done, then print by below process //for each loop is mostly used in industry, solely for Array?
-		System.out.println("\n^^^^^^^^^^^^^ Printing all index value of Array b [] ^^^^^^^^^^^^^^^^ ");
+		
+		System.out.println("\n^^^^^^^^^^^^^ Printing all index value of Array c [] ^^^^^^^^^^^^^^^^ ");
 		for (int i = 0; i < c.length; i++) {
 			System.out.println(c[i]);
 		}
@@ -82,6 +83,8 @@ public class UseOfArray03 {
 	}
 }
 /*
+ 
+ Info regarding this array:
  java.util.Arrays  Class-->This class contains various methods for manipulating arrays (such as sorting and searching).
 
 

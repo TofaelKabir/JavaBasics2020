@@ -6,20 +6,22 @@ public class UseOfArray08 {
 	/*
 	 * Author: Tofael
 	 */
-	public static void main(String[] args) {
-    
-        int [] a = new int[5];
 
+	public static void main(String[] args) { //we will study again
+
+        int [] a = new int[5];  
         Scanner sc = new Scanner(System.in);
+        
         System.out.println("Please enter some integer value: ");
 
-        for(int j=0; j<a.length;j++) {
-            a[j] = sc.nextInt();
-            System.out.println(a[j]);
+        for(int i=0; i<a.length; i++){
+             a[i] = sc.nextInt();
+           //System.out.println(a[i]); //what will happen if you comment out it
         }
-        for(int i=0; i<a.length;i++){ //for printing all of them
-            System.out.println(a[i]);
-       }
+        //what will happen if you print string instead of int : nextLine()
+        System.out.println("\nThe value in index 3 is: "+a[3]);
+        System.out.println("\nThe value in index 4 is: "+a[4]);
+        System.out.println("\nThe value in index 2 is: "+a[2]);
         sc.close();
     }
 }

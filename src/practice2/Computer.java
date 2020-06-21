@@ -23,7 +23,7 @@ public class Computer {
 		computer.configuration(); //object can initialize method
 		
 		Computer tofael = new Computer();
-		
+		System.out.println("jhsdgfjhs");
 		
 		Computer shohan = new Computer();
 		

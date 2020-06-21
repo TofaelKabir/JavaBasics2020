@@ -28,6 +28,9 @@ public class UseOfArrayList05 {
 
 		System.out.println("The size of the ArrayList is: " + ar.size() + "\n"); // in Array this is length
 
+		ArrayList ar34 = new ArrayList(20); //what does it mean by 20? we decide the capacity to 20
+		ArrayList ar44 = new ArrayList(ar); //what does it mean by ar? we decide the capacity to the size of ar, 11, as 1 is remove
+		
 		System.out.println("^^^^^^^^^^^^^ Printing single index value ^^^^^^^^^^^^^^^^ ");
 		System.out.println("Single index value: " + ar.get(0)); // output:
 		System.out.println("Single index value: " + ar.get(1)); // output:

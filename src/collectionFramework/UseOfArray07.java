@@ -2,26 +2,19 @@ package collectionFramework;
 
 import java.util.Scanner;
 
+import abstraction01.Car;
+
 public class UseOfArray07 {
 	/*
 	 * Author: Tofael
 	 */
 
-	public static void main(String[] args) { //we will study again
+	public static void main(String[] args) {
 
-        int [] a = new int[5];  
-        Scanner sc = new Scanner(System.in);
-        
-        System.out.println("Please enter some integer value: ");
-
-        for(int i=0; i<a.length; i++){
-             a[i] = sc.nextInt();
-           //System.out.println(a[i]); //what will happen if you comment out it
-        }
-        //what will happen if you print string instead of int : nextLine()
-        System.out.println("\nThe value in index 3 is: "+a[3]);
-        System.out.println("\nThe value in index 4 is: "+a[4]);
-        System.out.println("\nThe value in index 2 is: "+a[2]);
-        sc.close();
-    }
+		System.out.println("Please enter your full name here - ");
+		Scanner scanner = new Scanner(System.in); //System Class, in is a property --input stream
+		String myName = scanner.nextLine();  //nextInt for number, nextLine is for String
+		System.out.println("Hey ! " +  myName + " , now you know how Scanner class works!!");
+		scanner.close();
+	}
 }

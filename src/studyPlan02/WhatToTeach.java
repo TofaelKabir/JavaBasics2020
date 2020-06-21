@@ -2,6 +2,7 @@ package studyPlan02;
 
 public class WhatToTeach {
 	
+	
 	/*
 	 
 	 1a) Print "Hello World, Welcome to Java"

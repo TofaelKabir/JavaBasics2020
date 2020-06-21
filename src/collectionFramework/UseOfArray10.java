@@ -7,17 +7,17 @@ public class UseOfArray10 {
 	/*
 	 * Author: Tofael
 	 */
+
 	public static void main(String[] args) {
+		//how Random works
 
-        int [] a = new int[5];
+        Random random = new Random(); //chooosing randomly, not inputting, so no System.in
 
-        Random random = new Random();  //class
-      
-        for(int i=0; i<a.length; i++) {
-            a[i] = random.nextInt(100); //if has boundary
-            System.out.println(a[i]);
-        }
-
+        int a = random.nextInt(); //without limit(show negative number too)
+        //boolean a = random.nextBoolean();
+        //int a = random.nextInt(100); //with limit
+        System.out.println("Randomly chosen number1: " + a);
+        System.out.println("Randomly chosen number2: " + random.nextInt());
+       
     }
-
 }

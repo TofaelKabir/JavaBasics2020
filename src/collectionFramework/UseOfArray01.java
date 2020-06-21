@@ -2,10 +2,12 @@ package collectionFramework;
 
 import java.util.Arrays;
 
+/*
+ * Author: Shohag, Organised by: Tofael
+ */
+
 public class UseOfArray01 {
-	/*
-	 * Author: Shohag, Organised by: Tofael
-	 */
+	
 
 	public static void main(String[] args) {
 		
@@ -19,16 +21,21 @@ public class UseOfArray01 {
 		a[5] = 56;
 		
 		// print single index value:
-		System.out.println("Printing single index value: " + a[0]);// output: 5
-		System.out.println("Printing single index value: " + a[3]);// output: 0
-		System.out.println("Printing single index value: " + a[5]);// output: 5
+		System.out.println("Printing single index value: " + a[0]);// output: ?
+		System.out.println("Printing single index value: " + a[3]);// output: ?
+		System.out.println("Printing single index value: " + a[4]);// output: ?
+		System.out.println("Printing single index value: " + a[5]);// output: ?
 		
-		System.out.println("\nThe length of the array is: " + a.length); //length preserve the size of array, not method, field or variable
+		System.out.println("\nThe length of the array is: " + a.length); 
+		//length preserve the size of array, not method, field or variable
 		System.out.println("Printing Array ID: " + a);// Array ID
-		System.out.println("Printing hashCode of the Array, represented by data: " + Arrays.hashCode(a));// hashCode of the Array, represented by data
+		System.out.println("Printing hashCode of the Array, represented by data: " + Arrays.hashCode(a));
+		// hashCode of the Array, represented by data
+		//deepHashCode
 		//System.out.println("Printing hashCode of the Array, represented by data: " + Arrays.deepHashCode(a));
 		
-		System.out.println("Printing the index position of the value form the ref: "+ Arrays.binarySearch(a,50)); //---->to get the index position of the value form the ref
+		System.out.println("Printing the index position of the value form the ref: "+ Arrays.binarySearch(a,50)); 
+		//binary search to get the index position of the value form the ref
 		System.out.println("\nThe length of the array is: " + (a.length-1)); //for understanding the next line
 		System.out.println("\nPrinting single index value: " + a[a.length-1]); //find the value for (length-1) no.
 	}

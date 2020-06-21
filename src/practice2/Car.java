@@ -7,7 +7,7 @@ public class Car { //opening of claass body
 //constructor declared
 //method declared or implemented
 	
-	 String Brand = "Acura"; //String always in caps lock: Brand and double quotation is used
+	 public String Brand = "Acura"; //String always in caps lock: Brand and double quotation is used
 	 int mileage = 23415;    //except String every variable is in small letter, int represent number
 	 char grade = 'A';       //char always in a single character and surrounded by single quotation
 	 boolean electrical = false;   //true or false, (by default false)

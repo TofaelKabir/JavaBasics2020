@@ -2,8 +2,8 @@ package practiceReturnTypeMethod;
 
 public class Calculator6 {
 
-	public float a = 643619874;
-	public float b = 4651699;
+	public float a = 64.3619874f;
+	public float b = 46.51699f;
 	
 	public float multiplication() {
 	float total6 = a*b;

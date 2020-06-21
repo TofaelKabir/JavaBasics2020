@@ -1,22 +1,25 @@
 package collectionFramework;
 
-import java.util.Random;
 import java.util.Scanner;
 
 public class UseOfArray09 {
 	/*
 	 * Author: Tofael
 	 */
-
 	public static void main(String[] args) {
-		//how Random works
+    
+        int [] a = new int[5];
 
-        Random random = new Random(); //chooosing randomly, not inputting, so no System.in
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Please enter some integer value: ");
 
-        int a = random.nextInt(); //without limit(show negative number too)
-        //int a = random.nextInt(100); //with limit
-        System.out.println("Randomly chosen number1: " + a);
-        System.out.println("Randomly chosen number2: " + random.nextInt());
-       
+        for(int j=0; j<a.length;j++) {
+            a[j] = sc.nextInt();
+            System.out.println(a[j]);
+        }
+        for(int i=0; i<a.length;i++){ //for printing all of them
+            System.out.println(a[i]);
+       }
+        sc.close();
     }
 }
