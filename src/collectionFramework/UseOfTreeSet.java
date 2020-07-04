@@ -17,13 +17,14 @@ public class UseOfTreeSet {
 		set.add("e");
 		set.add("f");
 		set.add("d");
-
+		
 		System.out.println("^^^^^^^^^^^^^ Printing all the element of TreeSet ^^^^^^^^^^^^^^^^ ");
-		Iterator<String> itr = set.iterator();
-		while (itr.hasNext()) {
-			System.out.println(itr.next());
+		Iterator<String> it = set.iterator();
+		while (it.hasNext()) {
+			System.out.println(it.next());
 		}
 
 	}
 
 }
+//TODO test

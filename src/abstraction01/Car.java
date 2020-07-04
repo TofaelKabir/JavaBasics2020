@@ -13,6 +13,7 @@ public interface Car extends Taxi, Van {
 	public int salary = 10000;
 	
 	//can interface have constructor? Why not?
+
 	
 	public void start(); // in interface the methods are abstract and can be declared, not implemented
 

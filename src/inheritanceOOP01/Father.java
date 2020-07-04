@@ -13,6 +13,7 @@ public class Father extends Grandfather {
 	}
 	
 	public void fatherInfo() {
+		super.grandfatherInfo();
 		System.out.println("My name is Haque and I have 2 sons and 3 daughters");
 	}
 }

@@ -10,7 +10,7 @@ public class Car {
 	public Car() { //constructor declared
 		System.out.println("This is from default constructor");
 	}
-	//you can't write a parameterized constructor without writing default constructor
+	//you shouldn't write a parameterized constructor without writing default constructor
 	//parameterized constructor
 	public Car(String Brand, int mileage) { //local variable
 		this.Brand=Brand;
