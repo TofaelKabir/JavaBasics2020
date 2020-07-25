@@ -121,6 +121,9 @@ public class UseOfArrayList07 {
 		Iterator iterator = ar.iterator(); //interface
 		while (iterator.hasNext()) {
 			System.out.println(iterator.next());
+			
+
+		}	
 		}
-	}
+	
 }
